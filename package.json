@@ -1,0 +1,23 @@
+{
+  "name": "flow-control",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "fake": "node fake-api | pino",
+    "test": "autocannon -c 100 -d 5 -p 2 http://localhost:3000/amsterdam"
+  },
+  "author": "David Mark Clements",
+  "license": "MIT",
+  "dependencies": {
+    "autocannon": "^0.16.0",
+    "debug": "^2.2.0",
+    "express": "^4.14.0",
+    "lru-cache": "^4.0.0",
+    "mustache": "^2.2.1",
+    "pino-http": "^2.3.0",
+    "request": "^2.69.0",
+    "restify": "^4.0.3"
+  }
+}
